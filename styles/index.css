@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Arimo";
+    src: url('../fonts/Arimo.ttf');
+}
+:root {
+    /*  FONTS   */ 
+    --font-default:"Arimo", sans-serif;
+    /*  COLORS  */
+    --red-color: #970010;
+    --gray-color: #c5c5c5;
+    --yellow-colors:#d19c00;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: auto;
+    padding: 0px;
+    font-family: var(--font-default);
+    color: black;
+    background-color: white;    
+}
+h1 {
+    font-family: var(--font-default);
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+p {
+    border: gray 1px solid;
+    padding: 5px;
+    font-family: var(--font-default);
+    color: black;
+    text-align: left;
+    font-size: 15px;
+}
+.limite {
+    max-width: 1200px;
+    margin: auto;
+}

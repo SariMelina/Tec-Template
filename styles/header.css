@@ -1,0 +1,56 @@
+header figure {
+    margin: auto;
+    padding: 0px;
+    max-width: 100px;
+}
+header figure img{
+    width: 100%;
+}
+#movil .para-movil, #escritorio {
+    background-color: var(--red-color);
+}
+#movil {
+    display: none;
+}
+#movil .para-movil span {
+    font-size: 15px;
+    padding: 10px 12px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+#escritorio .limite {
+    padding: 10px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+#escritorio .limite a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+@media (max-width:580px) {    
+    #movil {
+        display: inline;
+    }
+    #movil .para-movil {
+        padding: 20px 10px;
+    }
+    #escritorio {
+        display: none;
+    }
+    #escritorio .limite {
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    #escritorio .limite a {
+        border-bottom: white 1px dotted;
+        color: white;
+        padding: 15px;
+        padding-left: 30px;
+        text-decoration: none;
+        font-size: 13px;
+    }
+}

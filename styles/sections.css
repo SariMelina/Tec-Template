@@ -1,0 +1,29 @@
+section {
+    margin-top: 20px;
+}
+section .cuadro {
+    background-color: var(--gray-color);
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+section .cuadro .limite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section .cuadro .limite p {
+    max-width: 300px;
+}
+@media (max-width:480px) {
+    section .cuadro .limite {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section .cuadro .limite p {
+        max-width: 300px;
+        margin-top: 15px;
+    }
+}
